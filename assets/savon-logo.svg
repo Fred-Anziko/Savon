@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80">
+  <!-- Savon Forestry Services Logo -->
+  <style>
+    .logo-text { font-family: Arial, sans-serif; font-weight: bold; }
+    .main-text { font-size: 24px; fill: #2e7d32; }
+    .sub-text { font-size: 14px; fill: #558b2f; }
+    .tree1 { fill: #33691e; }
+    .tree2 { fill: #558b2f; }
+    .tree3 { fill: #7cb342; }
+  </style>
+  
+  <!-- Tree Icons -->
+  <path class="tree1" d="M40,20 L50,40 L45,40 L50,55 L40,55 L40,70 L30,70 L30,55 L20,55 L25,40 L20,40 Z" />
+  <path class="tree2" d="M70,25 L80,45 L75,45 L80,60 L70,60 L70,75 L60,75 L60,60 L50,60 L55,45 L50,45 Z" />
+  <path class="tree3" d="M95,30 L105,50 L100,50 L105,65 L95,65 L95,80 L85,80 L85,65 L75,65 L80,50 L75,50 Z" />
+  
+  <!-- Company Name -->
+  <text x="120" y="40" class="logo-text main-text">SAVON FORESTRY</text>
+  <text x="120" y="60" class="logo-text sub-text">SERVICES LTD</text>
+</svg>
