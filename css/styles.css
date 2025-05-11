@@ -564,6 +564,42 @@ section {
     flex-grow: 1;
 }
 
+.blog-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.blog-share {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.blog-share span {
+    color: var(--dark-gray);
+}
+
+.share-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--light-color);
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.share-icon:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+    transform: translateY(-3px);
+}
+
 .blog-cta {
     text-align: center;
 }

@@ -148,6 +148,40 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add "New" badge to Blog nav item
     document.querySelector('a[href="#blog"]').innerHTML += ' <span class="nav-badge">New</span>';
     
+    // Add animation to blog cards
+    const blogCards = document.querySelectorAll('.blog-card');
+    if (blogCards.length > 0) {
+        blogCards.forEach((card, index) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            card.style.transitionDelay = (index * 0.1) + 's';
+            
+            // Function to check if element is in viewport
+            const isElementInViewport = (el) => {
+                const rect = el.getBoundingClientRect();
+                return (
+                    rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.bottom >= 0
+                );
+            };
+            
+            // Initial check
+            if (isElementInViewport(card)) {
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+            }
+            
+            // Check on scroll
+            window.addEventListener('scroll', () => {
+                if (isElementInViewport(card)) {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }
+            });
+        });
+    }
+    
     // Initialize page
     updateActiveNavLinkOnScroll();
 });
