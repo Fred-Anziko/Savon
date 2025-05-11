@@ -147,6 +147,15 @@
         grid-template-columns: 1fr;
     }
     
+    /* Blog Section */
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .blog-image {
+        height: 180px;
+    }
+    
     /* Testimonials Section */
     .testimonial {
         padding: 1.5rem;
@@ -184,6 +193,10 @@
         grid-template-columns: repeat(2, 1fr);
     }
     
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
     /* About section adjustments */
     .about-content {
         gap: 2rem;
@@ -206,6 +219,10 @@
     
     .gallery-grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .blog-grid {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -240,7 +257,7 @@
         max-width: 500px;
     }
     
-    .hero, .services, .process, .about, .gallery, .testimonials, .contact {
+    .hero, .services, .process, .about, .gallery, .blog, .testimonials, .contact {
         background-color: white;
     }
 }

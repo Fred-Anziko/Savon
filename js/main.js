@@ -145,6 +145,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
+    // Add "New" badge to Blog nav item
+    document.querySelector('a[href="#blog"]').innerHTML += ' <span class="nav-badge">New</span>';
+    
     // Initialize page
     updateActiveNavLinkOnScroll();
 });
